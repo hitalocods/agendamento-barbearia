@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendamento de Horário</title>
+    <!-- Caminho para o CSS corrigido -->
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Agende seu horário com um barbeiro</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Agendar</a></li>
+                <li><a href="#">Contatos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="agendamento-section">
+        <h2 class="section-title">Escolha o barbeiro</h2>
+
+        <div class="barbeiros-container">
+            <!-- Caminho para as imagens corrigido -->
+            <div class="barbeiro-mini-card" data-nome="Barbeiro 1">
+                <img src="IMG/hitalo.jpeg" alt="Foto do Barbeiro 1">
+                <div class="barbeiro-nome">Barbeiro 1</div>
+            </div>
+            <div class="barbeiro-mini-card" data-nome="Barbeiro 2">
+                <img src="IMG/hitalo.jpeg" alt="Foto do Barbeiro 2">
+                <div class="barbeiro-nome">Barbeiro 2</div>
+            </div>
+            <div class="barbeiro-mini-card" data-nome="Barbeiro 3">
+                <img src="IMG/hitalo.jpeg" alt="Foto do Barbeiro 3">
+                <div class="barbeiro-nome">Barbeiro 3</div>
+            </div>
+        </div>
+
+        <h2 class="section-title">Escolha o dia</h2>
+        <div id="dias-da-semana"></div>
+
+        <h2 class="section-title">Escolha o horário</h2>
+        <div id="horarios"></div>
+
+        <button id="btn-agendar">Agendar Horário</button>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Barbershop. Todos os direitos reservados.</p>
+            <div class="social-links">
+                <a href="#" class="social-link">Facebook</a>
+                <a href="#" class="social-link">Instagram</a>
+                <a href="#" class="social-link">WhatsApp</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/9.17.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.17.2/firebase-database.js"></script>
+
+    <!-- Caminho para o script JS corrigido -->
+    <script src="JS/script.js"></script>
+</body>
+
+</html>
